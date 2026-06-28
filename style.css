@@ -1,0 +1,953 @@
+
+/* ========================================= */
+/* RESET */
+/* ========================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#080808;
+
+    color:#fff;
+
+    overflow-x:hidden;
+
+}
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+/* Barra de rolagem */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#d90429;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#ff1e3c;
+
+}
+
+
+
+/* ========================================= */
+/* HEADER */
+/* ========================================= */
+
+header{
+
+    position:fixed;
+
+    width:100%;
+
+    top:0;
+
+    left:0;
+
+    padding:18px 8%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.65);
+
+    backdrop-filter:blur(12px);
+
+    z-index:999;
+
+}
+
+.logo{
+
+    font-size:34px;
+
+    color:#e50914;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+nav a{
+
+    color:white;
+
+    transition:.35s;
+
+    font-weight:500;
+
+}
+
+nav a:hover{
+
+    color:#e50914;
+
+}
+
+
+
+/* ========================================= */
+/* BOTÕES */
+/* ========================================= */
+
+.botao{
+
+    background:#e50914;
+
+    color:white;
+
+    padding:13px 30px;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.botao:hover{
+
+    background:#ff2233;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 25px rgba(229,9,20,.6);
+
+}
+
+.botao2{
+
+    border:2px solid white;
+
+    color:white;
+
+    padding:13px 30px;
+
+    border-radius:8px;
+
+    transition:.35s;
+
+}
+
+.botao2:hover{
+
+    background:white;
+
+    color:#111;
+
+}
+
+.grande{
+
+    font-size:18px;
+
+}
+
+
+
+/* ========================================= */
+/* BANNER */
+/* ========================================= */
+
+.banner{
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+
+    background:
+
+    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.88)),
+
+    url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1800&q=80");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+.banner-conteudo{
+
+    max-width:900px;
+
+    animation:aparecer 1.2s;
+
+}
+
+.destaque{
+
+    display:inline-block;
+
+    color:#ff4d5f;
+
+    font-weight:600;
+
+    margin-bottom:15px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.banner h1{
+
+    font-size:62px;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+
+}
+
+.banner p{
+
+    font-size:20px;
+
+    color:#d7d7d7;
+
+    margin-bottom:40px;
+
+}
+
+.botoes{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+/* ========================================= */
+/* NÚMEROS */
+/* ========================================= */
+
+.numeros{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    padding:70px 8%;
+
+    background:#111;
+
+}
+
+.numero{
+
+    background:#181818;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    transition:.35s;
+
+}
+
+.numero:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#e50914;
+
+    box-shadow:0 15px 30px rgba(229,9,20,.25);
+
+}
+
+.numero h2{
+
+    color:#e50914;
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+.numero p{
+
+    color:#d0d0d0;
+
+}
+
+/* ========================================= */
+/* VANTAGENS */
+/* ========================================= */
+
+.vantagens{
+
+    padding:90px 8%;
+    background:#0b0b0b;
+    text-align:center;
+
+}
+
+.vantagens h2{
+
+    font-size:42px;
+    margin-bottom:10px;
+
+}
+
+.subtitulo{
+
+    color:#bcbcbc;
+    margin-bottom:50px;
+    font-size:17px;
+
+}
+
+.cards{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+
+}
+
+.card{
+
+    background:#181818;
+
+    padding:28px 20px;
+
+    border-radius:18px;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#e50914;
+
+    box-shadow:0 12px 30px rgba(229,9,20,.25);
+
+}
+
+.card i{
+
+    font-size:42px;
+
+    color:#e50914;
+
+    margin-bottom:18px;
+
+}
+
+.card h3{
+
+    font-size:20px;
+
+    margin-bottom:10px;
+
+}
+
+.card p{
+
+    color:#cfcfcf;
+
+    font-size:15px;
+
+    line-height:1.6;
+
+}
+
+
+
+/* ========================================= */
+/* APLICATIVOS */
+/* ========================================= */
+
+.apps{
+
+    background:#111;
+    padding:90px 8%;
+    text-align:center;
+
+}
+
+.apps h2{
+
+    font-size:40px;
+    margin-bottom:10px;
+
+}
+
+.apps-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+
+    gap:25px;
+
+    margin-top:45px;
+
+}
+
+.app{
+
+    background:#1a1a1a;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    transition:.35s;
+
+    border:1px solid transparent;
+
+}
+
+.app:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#e50914;
+
+    box-shadow:0 12px 25px rgba(229,9,20,.25);
+
+}
+
+.app img{
+
+    width:80px;
+
+    height:80px;
+
+    object-fit:contain;
+
+    margin:auto;
+
+    margin-bottom:18px;
+
+}
+
+.app h3{
+
+    font-size:17px;
+
+}
+
+
+
+/* ========================================= */
+/* DISPOSITIVOS */
+/* ========================================= */
+
+.dispositivos{
+
+    background:#090909;
+
+    padding:90px 8%;
+
+    text-align:center;
+
+}
+
+.dispositivos h2{
+
+    font-size:40px;
+
+    margin-bottom:10px;
+
+}
+
+.dispositivos-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+
+    gap:22px;
+
+    margin-top:45px;
+
+}
+
+.dispositivo{
+
+    background:#181818;
+
+    border-radius:15px;
+
+    padding:25px 15px;
+
+    transition:.35s;
+
+    border:1px solid rgba(255,255,255,.05);
+
+}
+
+.dispositivo:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#e50914;
+
+    box-shadow:0 12px 25px rgba(229,9,20,.25);
+
+}
+
+.dispositivo i{
+
+    font-size:34px;
+
+    color:#e50914;
+
+    margin-bottom:15px;
+
+}
+
+.dispositivo h3{
+
+    font-size:16px;
+
+    font-weight:500;
+
+}
+
+/* ========================================= */
+/* CHAMADA PARA AÇÃO (CTA) */
+/* ========================================= */
+
+.cta{
+
+    padding:100px 8%;
+
+    text-align:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,.88),rgba(0,0,0,.88)),
+    url("https://images.unsplash.com/photo-1440404653325-ab127d49abc1?auto=format&fit=crop&w=1800&q=80");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+.cta h2{
+
+    font-size:48px;
+
+    margin-bottom:20px;
+
+}
+
+.cta p{
+
+    color:#d3d3d3;
+
+    font-size:18px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+/* ========================================= */
+/* FAQ */
+/* ========================================= */
+
+.faq{
+
+    background:#101010;
+
+    padding:90px 8%;
+
+}
+
+.faq h2{
+
+    text-align:center;
+
+    font-size:40px;
+
+    margin-bottom:50px;
+
+}
+
+.faq-grid{
+
+    display:grid;
+
+    gap:20px;
+
+}
+
+.faq-card{
+
+    background:#181818;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    transition:.35s;
+
+    border-left:4px solid #e50914;
+
+}
+
+.faq-card:hover{
+
+    transform:translateX(8px);
+
+}
+
+.faq-card h3{
+
+    margin-bottom:10px;
+
+}
+
+.faq-card p{
+
+    color:#cfcfcf;
+
+    line-height:1.7;
+
+}
+
+
+
+/* ========================================= */
+/* RODAPÉ */
+/* ========================================= */
+
+footer{
+
+    background:#050505;
+
+    text-align:center;
+
+    padding:50px 20px;
+
+    border-top:1px solid rgba(255,255,255,.05);
+
+}
+
+.footer-logo{
+
+    color:#e50914;
+
+    font-size:36px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    margin:25px 0;
+
+}
+
+.footer-links a{
+
+    color:#bdbdbd;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:#ffffff;
+
+}
+
+footer small{
+
+    color:#777;
+
+}
+
+
+
+/* ========================================= */
+/* BOTÃO WHATSAPP */
+/* ========================================= */
+
+.whatsapp{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    background:#25D366;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:32px;
+
+    box-shadow:0 0 25px rgba(37,211,102,.45);
+
+    transition:.35s;
+
+    z-index:999;
+
+}
+
+.whatsapp:hover{
+
+    transform:scale(1.12);
+
+    box-shadow:0 0 35px rgba(37,211,102,.8);
+
+}
+
+
+
+/* ========================================= */
+/* ANIMAÇÕES */
+/* ========================================= */
+
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* ========================================= */
+/* RESPONSIVIDADE */
+/* ========================================= */
+
+@media(max-width:992px){
+
+header{
+
+    flex-direction:column;
+
+    gap:18px;
+
+    padding:20px;
+
+}
+
+nav{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:15px;
+
+}
+
+.banner h1{
+
+    font-size:42px;
+
+}
+
+.banner p{
+
+    font-size:18px;
+
+}
+
+.numeros{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.cards,
+.apps-grid,
+.dispositivos-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.botoes{
+
+    flex-direction:column;
+
+}
+
+.botao,
+.botao2{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.banner h1{
+
+    font-size:32px;
+
+}
+
+.banner p{
+
+    font-size:16px;
+
+}
+
+.cta h2{
+
+    font-size:32px;
+
+}
+
+.faq h2{
+
+    font-size:32px;
+
+}
+
+.numeros{
+
+    grid-template-columns:1fr;
+
+}
+
+.footer-links{
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.whatsapp{
+
+    width:58px;
+
+    height:58px;
+
+    font-size:28px;
+
+}
+
+}
+
+
+
+
